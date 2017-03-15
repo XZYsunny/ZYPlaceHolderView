@@ -10,7 +10,7 @@
 #import "ZYNorecordPlaceHolderView.h"
 #import "ZYNetworkErrorPlaceHolderView.h"
 
-@interface UIViewController (ZYPlaceHolder)
+@interface UIViewController (ZYPlaceHolder) <ZYNetworkErrorPlaceHolderViewDelegate,ZYNorecordPlaceHolderViewDelegate>
 - (void)zy_checkEmpty:(ZYPlaceHolder)status superView:(UIView *)superView;
 
 @end
